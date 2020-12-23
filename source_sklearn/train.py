@@ -10,7 +10,7 @@ import pandas as pd
 import joblib
 
 ## TODO: Import any additional libraries you need to define a model
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 
 # Provided model load function
 def model_fn(model_dir):
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     
 
     ## TODO: Define a model 
-    model = RandomForestClassifier()
+    model = LogisticRegression()
     
     
     ## TODO: Train the model
